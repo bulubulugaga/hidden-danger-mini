@@ -1,0 +1,229 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/tabbar/home/home",
+			"style": {
+				"navigationBarTitleText": "安全检查智能管理平台"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			},
+			"meta": {
+				"white": true  // 白名单，不需要登录
+				// "organization": true  // 机构页面，不需要选择机构
+			}
+		},
+		{
+			"path": "pages/login/phoneLogin",
+			"style": {
+				"navigationBarTitleText": "登录"
+			},
+			"meta": {
+				"white": true
+			}
+		},
+		{
+			"path": "pages/tabbar/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tabbar/personal/personal",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [  //分包处理
+		{
+			"root": "pages/public",
+			"pages": [{
+				"path": "404",
+				"name": "404",
+				"style": {
+					"navigationBarTitleText": "页面不存在"
+				}
+			}]
+		}, {
+			"root": "pages/login/organization",
+			"pages": [{
+				"path": "list",
+				"style": {
+					"navigationBarTitleText": "选择机构"
+				},
+				"meta": {
+					"organization": true
+				}
+			}, {
+				"path": "create",
+				"style": {
+					"navigationBarTitleText": "创建机构"
+				},
+				"meta": {
+					"organization": true
+				}
+			}, {
+				"path": "apply",
+				"style": {
+					"navigationBarTitleText": "选择机构"
+				},
+				"meta": {
+					"organization": true
+				}
+			}]
+		}, {
+			"root": "pages/home",
+			"pages": [{
+				"path": "dangerManage/list",
+				"style": {
+					"navigationBarTitleText": "隐患管理",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "dangerManage/detail/detail",
+				"style": {
+					"navigationBarTitleText": "隐患详情"
+				}
+			}, {
+				"path": "dangerManage/rectificationReview/form",
+				"style": {
+					"navigationBarTitleText": "整改复核隐患"
+				}
+			}, {
+				"path": "dangerManage/rectificationReview/detail",
+				"style": {
+					"navigationBarTitleText": "隐患详情"
+				}
+			}, {
+				"path": "dangerManage/add/add",
+				"style": {
+					"navigationBarTitleText": "新增隐患"
+				}
+			}, {
+				"path": "dangerManage/library/library",
+				"style": {
+					"navigationBarTitleText": "引用隐患库"
+				}
+			}, {
+				"path": "checklistRecord/list",
+				"style": {
+					"navigationBarTitleText": "检查表记录"
+				}
+			}, {
+				"path": "checklistRecord/detail",
+				"style": {
+					"navigationBarTitleText": "检查表记录"
+				}
+			}, {
+				"path": "exportChecklist/list",
+				"style": {
+					"navigationBarTitleText": "检查组一"
+				}
+			}, {
+				"path": "exportChecklist/exportFrom/exportFrom",
+				"style": {
+					"navigationBarTitleText": "导出表"
+				}
+			}, {
+				"path": "exportChecklist/codePreview/codePreview",
+				"style": {
+					"navigationBarTitleText": "文件导出"
+				}
+			}, {
+				"path": "exportChecklist/link/link",
+				"style": {
+					"navigationBarTitleText": "表格抬头"
+				},
+				"meta": {
+					"white": true
+				}
+			}, {
+				"path": "exportChecklist/sign/sign",
+				"style": {
+					"navigationBarTitleText": "检查表签名",
+					"pageOrientation": "landscape"
+				}
+			}]
+		}, {
+			"root": "pages/message",
+			"pages": [
+				
+			]
+		}, {
+			"root": "pages/personal",
+			"pages": [{
+				"path": "editPersonel/edit",
+				"style": {
+					"navigationBarTitleText": "修改个人信息"
+				}
+			}, {
+				"path": "editPersonel/chooseAvar/chooseAvar",
+				"style": {
+					"navigationBarTitleText": "选择头像"
+				}
+			}, {
+				"path": "organization/organization",
+				"style": {
+					"navigationBarTitleText": "我的机构"
+				}
+			}, {
+				"path": "teams/list",
+				"style": {
+					"navigationBarTitleText": "检查组"
+				}
+			}, {
+				"path": "teams/detail",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			}, {
+				"path": "teams/template/template",
+				"style": {
+					"navigationBarTitleText": "检查表模板"
+				}
+			}, {
+				"path": "teams/addUser/addUser",
+				"style": {
+					"navigationBarTitleText": "添加小组成员"
+				}
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7F8389",
+		"selectedColor": "#333333",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/tabbar/home/home",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/tabbar_home.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_home1.png"
+			},
+			{
+				"pagePath": "pages/tabbar/message/message",
+				"text": "消息",
+				"iconPath": "static/images/tabbar/tabbar_message.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_message1.png"
+			},
+			{
+				"pagePath": "pages/tabbar/personal/personal",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/tabbar_personal.png",
+				"selectedIconPath": "/static/images/tabbar/tabbar_personal1.png"
+			}
+		]
+	}
+}

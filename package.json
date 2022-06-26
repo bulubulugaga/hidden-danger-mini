@@ -1,0 +1,21 @@
+{
+  "name": "hidden-danger",
+  "version": "1.0.0",
+  "description": "uniapp config",
+  "main": "main.js",
+  "dependencies": {
+    "npm": "^8.3.0",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.8-beta.3"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
+}

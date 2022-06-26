@@ -1,0 +1,74 @@
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 文字样式 */
+.f20 { font-size: 20rpx; }
+.f22 { font-size: 22rpx; }
+.f24 { font-size: 24rpx; }
+.f26 { font-size: 26rpx; }
+.f28 { font-size: 28rpx; }
+.f30 { font-size: 30rpx; }
+.f32 { font-size: 32rpx; }
+.f34 { font-size: 34rpx; }
+.f36 { font-size: 36rpx; }
+.f40 { font-size: 40rpx; }
+.f48 { font-size: 48rpx; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.FB { font-weight: bold; }
+.ellipsis { white-space: nowrap;overflow: hidden;text-overflow:ellipsis; }
+.word-break-all { word-break: break-all };
+
+/* 常用颜色 */
+.main-blue { color: #1FB3F7; }
+.bg-main-blue { background-color: #1FB3F7; }
+.main-green { color: #04C160; }
+.bg-main-green { background-color: #04C160; }
+.main-red { color: #FC4C2F; }
+.bg-main-red { background-color: #FC4C2F; }
+.white { color: #fff; }
+.bg-white { background-color: #fff; }
+.black { color: #000; }
+.c333 { color: #333; }
+.c666 { color: #666; }
+.c999 { color: #999; }
+
+
+/* 圆角边框 */
+.round { border-radius: 5000rpx; }
+.round-10 { border-radius: 10rpx; }
+.round-4 { border-radius: 4rpx; }
+
+
+/* 按钮基本样式 */
+button { 
+	padding: 0;
+	background-color: #1FB3F7;
+	font-size: 36rpx;
+	line-height: inherit;
+	color: #fff;
+	border: none;
+	border-radius: 10rpx;
+}
+button::after {
+   border: none;
+}
+
+/* 弹窗按钮样式 */
+.my-popup-button {
+	font-size: 36rpx;
+	color: #1FB3F7;
+	line-height: 100rpx;
+	text-align: center;
+}
